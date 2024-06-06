@@ -1,0 +1,17 @@
+Êþº¾   4 4    Student   java/lang/Object name Ljava/lang/String; 
+rollNumber I grade <init> ((Ljava/lang/String;ILjava/lang/String;)V Code
+   
+  ()V	    	     	   	  LineNumberTable LocalVariableTable this 	LStudent; 
+getRollNumber ()I toString ()Ljava/lang/String;   java/lang/StringBuilder ! Name: 
+  # 
+ $ (Ljava/lang/String;)V
+  & ' ( append -(Ljava/lang/String;)Ljava/lang/StringBuilder; * , Roll Number: 
+  , ' - (I)Ljava/lang/StringBuilder; / 	, Grade: 
+  1   
+SourceFile 	Main.java                    	      
+ 
+     l     *· 
+*+µ *µ *-µ ±           
+  
+ 	   
+      *                         	          /     *´ ¬                               V     ,» Y · "*´ ¶ %)¶ %*´ ¶ +.¶ %*´ ¶ %¶ 0°                   ,      2    3

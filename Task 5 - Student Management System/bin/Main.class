@@ -1,0 +1,52 @@
+Êşº¾   4 §   Main   java/lang/Object <init> ()V Code
+  	   LineNumberTable LocalVariableTable this LMain; main ([Ljava/lang/String;)V   java/util/Scanner	     java/lang/System   in Ljava/io/InputStream;
+     (Ljava/io/InputStream;)V   StudentManagementSystem
+  		     ! out Ljava/io/PrintStream; # 1. Add Student
+ % '  & java/io/PrintStream ( )  println (Ljava/lang/String;)V + 2. Remove Student - 3. Search Student / 4. Display All Students 1  5. Exit 3 Enter your choice: 
+ % 5 6 ) print
+  8 9 :  nextInt ()I
+  < = > nextLine ()Ljava/lang/String; @ Enter student name:  B Enter roll number:  D 
+Enter grade:   F  Student
+ E H  I ((Ljava/lang/String;ILjava/lang/String;)V
+  K L M 
+addStudent (LStudent;)V O Student added. Q (Enter roll number of student to remove: 
+  S T U 
+removeStudent (I)Z W Student removed. Y Student not found. [ (Enter roll number of student to search: 
+  ] ^ _ 
+searchStudent (I)LStudent; a Student found:
+ % c ( d (Ljava/lang/Object;)V
+  f g h getAllStudents ()Ljava/util/List;
+ j l  k java/util/List m n  isEmpty ()Z p No students to display. r 
+All Students:
+ j t u v iterator ()Ljava/util/Iterator;
+ x z  y java/util/Iterator { | next ()Ljava/lang/Object;
+ x ~  n  hasNext  
+Exiting...
+  ƒ „  close
+  † ‡ ˆ exit (I)V Š $Invalid choice. Please choose again. args [Ljava/lang/String;  scanner Ljava/util/Scanner; sms LStudentManagementSystem; choice I name Ljava/lang/String; 
+rollNumber grade 
+newStudent 	LStudent; rollToRemove  removed Z rollToSearch searchedStudent 
+allStudents Ljava/util/List;  student LocalVariableTypeTable Ljava/util/List<LStudent;>; 
+StackMapTable  Œ 
+SourceFile 	Main.java !                /     *· ±    
+       = 
+         
+   	       å    ˜» Y² · L» Y· M² "¶ $² *¶ $² ,¶ $² .¶ $² 0¶ $² 2¶ 4+¶ 7>ª    D         #   w   ¨   á  1+¶ ;W² ?¶ 4+¶ ;:² A¶ 4+¶ 76+¶ ;W² C¶ 4+¶ ;:» EY· G: , ¶ J² N¶ $§ÿV² P¶ 4+¶ 76,¶ R6		™ ² V¶ $§ÿ0² X¶ $§ÿ%² Z¶ 4+¶ 76
+,
+¶ \:
+
+Æ ² `¶ $² 
+¶ b§ş÷² X¶ $§şì,¶ e:¹ i ™ ² o¶ $§şÑ² q¶ $¹ s :§ ¹ w À E:
+² 
+¶ b¹ } šÿå§şœ² €¶ $+¶ ‚¸ …§ş‰² ‰¶ $§ş~    
+   Ú 6   ? 
+ @  C  D # E + F 3 G ; H C I H K l M q N y O  P ‡ Q  R ’ S š T   V ¯ W µ X ½ Y À \ È ] Î ^ Ö _ Û ` ã a æ b î d ñ g ù h ÿ i  j k l m n' p* s0 t: uB vE wM xe ym xw |z ‚ €† Š ‚ …• B 
+      ˜ ‹ Œ   
+    …    HM ‘ ’   A “ ”   3 • ’      – ”  ¯  — ˜   Î # ™ ’  Ö  š › 	 ÿ + œ ’ 
+  #  ˜ 
+0 J  Ÿ e    ˜ 
+ ¡    0 J  ¢  £   µ ı     ü Xû Sÿ % 
+  ¤          ÿ 
+   ¤      ÿ -   ¤            E  ÿ 
+   ¤      ÿ  
+  ¤              j  ÿ    ¤              j   x  ÿ    ¤        ¥    ¦

@@ -1,0 +1,30 @@
+Êþº¾   4 D   StudentManagementSystem   java/lang/Object students Ljava/util/List; 	Signature Ljava/util/List<LStudent;>; <init> ()V Code
+  
+ 	 
+   java/util/ArrayList
+  
+	     LineNumberTable LocalVariableTable this LStudentManagementSystem; 
+addStudent (LStudent;)V
+     java/util/List   add (Ljava/lang/Object;)Z  student 	LStudent; 
+removeStudent (I)Z
+  $ % & iterator ()Ljava/util/Iterator;
+ ( *  ) java/util/Iterator + , next ()Ljava/lang/Object;  .  Student
+ - 0 1 2 
+getRollNumber ()I
+  4 5  remove
+ ( 7 8 9  hasNext ()Z 
+rollNumber I 
+StackMapTable 
+searchStudent (I)LStudent; getAllStudents ()Ljava/util/List; ()Ljava/util/List<LStudent;>; 
+SourceFile 	Main.java                    	 
+  
+   B     *· *» Y· µ ±                                
+   D     *´ +¹  W±       
+    " 
+ #                     ! "  
+   ¡     7*´ ¹ # N§ "-¹ ' À -M,¶ /  *´ ,¹ 3 W¬-¹ 6 šÿÛ¬           &  '  ( * ) , & 5 ,         7       7 : ;        <    ÿ 
+      (    = >  
+   ’     ,*´ ¹ # N§ -¹ ' À -M,¶ /  ,°-¹ 6 šÿæ°           0  1  2 ! 0 * 5         ,       , : ;   
+     <    ÿ 
+      (    ? @       A 
+   /     *´ °           9              B    C
